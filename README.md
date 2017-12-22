@@ -15,8 +15,8 @@ Download the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road
 ### Usage
 ##### Image Augmentation
 
-The training set contains only 289 training examples which is not that much to get a good grasp on challenging road conditions, in particular jumps in luminacence.
-This is why, there is a way to generate additional training samples by augmenting (changing luminesence, translation, horizontal flipping, rotating, adding slat-and-pepper noise) the original images.
+The training set contains only 289 training examples which is not that much to get a good grasp on challenging road conditions, in particular jumps in luminescence.
+This is why, there is a way to generate additional training samples by augmenting (changing luminescence, translation, horizontal flipping, rotating, adding slat-and-pepper noise) the original images.
 
 Run the following command to perform the image augmentation. Additional images and gt_images will be written in the same original folders:
 
@@ -47,7 +47,7 @@ Model Saved in ./data/fcn-8/1513930385.7582145.ckpt
 
 ##### Testing on Images
 
-To run a trained model on images, you need to specify the chekpoint name as a paramterer, followerd by 'img' parameter, e.g.:
+To run a trained model on images, you need to specify the checkpoint name as a parameter, followed by 'img' parameter, e.g.:
 
 ```
 python3 main.py 1513930385.7582145.ckpt img
@@ -55,7 +55,7 @@ python3 main.py 1513930385.7582145.ckpt img
 
 ##### Testing on Video
 
-To run a trained model on images, you need to specify the chekpoint name as a paramterer, followerd by a mp4 filename located in  ./video folder, e.g.:
+To run a trained model on images, you need to specify the checkpoint name as a parameter, followerd by a mp4 filename located in  ./video folder, e.g.:
 
 ```
 python3 main.py 1513930385.7582145.ckpt harder_challenge_video.mp4
